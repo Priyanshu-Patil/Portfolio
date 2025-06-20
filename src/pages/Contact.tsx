@@ -35,7 +35,7 @@ export const ContactSection = () => {
             <SparkleIcon className="size-5 text-lime-400" />
             Connect with me
           </span>
-          <h2 className="text-white px-10 font-host-grotesk text-5xl sm:text-2xl md:text-6xl font-bold leading-tight text-center">
+          <h2 className="text-white px-10 font-host-grotesk text-5xl sm:text-2xl md:px-16 md:text-5xl font-bold leading-tight text-center">
             <TextAnimate
               className="px-7"
               animation="blurInUp"
