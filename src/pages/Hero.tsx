@@ -69,6 +69,7 @@ export const HeroSection = () => {
             className="size-[100px]"
             src={memojiImgae}
             alt="Person Peeking from behind laptop"
+            priority
           />
           <div className="bg-gray-950 border border-gray-800 px-4 py-2 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">
