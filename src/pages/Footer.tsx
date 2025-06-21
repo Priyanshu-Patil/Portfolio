@@ -19,7 +19,7 @@ export const Footer = () => {
                 href={link.url}
                 key={link.name}
                 target="_blank"
-                className="inline-flex relative items-center border-2 px-3 py-2 group overflow-hidden rounded-full border-white/50 gap-2"
+                className="inline-flex relative items-center border-2 px-3 py-2 group overflow-hidden rounded-full border-white/50 hover:border-gray-100 gap-2"
               >
                 <span className="absolute inset-0 bg-gray-100 translate-x-[-100%] group-hover:translate-x-0 duration-300"></span>
                 <span className="font-semibold relative z-5 group-hover:text-black transition-colors duration-300">{link.name}</span>

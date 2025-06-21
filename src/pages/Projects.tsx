@@ -1,5 +1,4 @@
 
-
 import docsImage from "@/assets/images/Docs.png";
 import ochiImage from "@/assets/images/Ochi.png";
 import sundownImage from "@/assets/images/Sundown.png";
@@ -53,7 +52,7 @@ const portfolioProjects = [
 		results: [
 			{ title: "Honed pixel-perfect layout skills" },
 			{ title: "Practiced clean and maintainable CSS" },
-			{ title: "Leveraged Git & GitHub for real-time collaboration" },
+			{ title: "Git & GitHub for real-time collaboration" },
 		],
 		link: "https://project-usabilityhub.netlify.app/",
 		image: usabilityImage,
@@ -62,7 +61,7 @@ const portfolioProjects = [
 
 export const Projects = () => {
 	return (
-		<section id="featured-projects" className="pb-16 lg:py-24">
+		<section className="pb-16 lg:py-24">
 			<div className="container">
 				<div className="flex justify-center">
 					<p className="uppercase font-semibold tracking-widest bg-gradient-to-r bg-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">

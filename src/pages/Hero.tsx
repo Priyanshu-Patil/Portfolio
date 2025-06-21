@@ -1,5 +1,9 @@
 "use client";
 
+import { getLenis } from "@/lib/lenis";
+import { useActiveSectionContext } from "@/context/activeSectionContext";
+import type { SectionName } from "@/lib/types";
+
 import memojiImgae from "../assets/images/memoji-computer.png";
 import Image from "next/image";
 import ArrowDonw from "../assets/icons/arrow-down.svg";
@@ -10,8 +14,22 @@ import SparkleIcon from "@/assets/icons/sparkle.svg";
 import { TextAnimate } from "@/components/magicui/text-animate";
 
 export const HeroSection = () => {
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  const scrollToContact = () => {
+  const target = document.getElementById("contact");
+
+  if (target) {
+    const lenis = getLenis();
+    lenis.scrollTo(target);
+
+    setActiveSection("Contact" as SectionName);
+    setTimeOfLastClick(Date.now());
+  }
+};
+
   return (
-    <div id="Home" className="py-32 md:pd-[100px] md:py-48 lg:py-40 relative overflow-x-clip">
+    <div className="py-32 md:pd-[100px] md:py-48 lg:py-40 relative overflow-x-clip">
       <div className="absolute inset-0 -z-10 [mask-image:linear-gradient(black,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -77,20 +95,18 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="flex flex-col items-center md:flex-row justify-center mt-8 gap-4 ">
-          <a
-            href="mailto:priyanshupatil.dev@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
+          <button
+            onClick={scrollToContact}
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-full"
           >
             <span className="font-semibold">Contact Me</span>
             <ArrowDonw className="size-4 -rotate-[130deg]" />
-          </a>
+          </button>
           <a
             href="https://drive.google.com/file/d/1P2stIOsPYO9cJPad3R6ZWMOEoLiqcN8B/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor:pointer inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl"
+            className="cursor:pointer inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-full"
           >
             <span className="font-semibold">My Resume</span>
           </a>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Calistoga, Host_Grotesk } from "next/font/google";
 import { twMerge } from "tailwind-merge";
+import ActiveSectionContextProvider from "@/context/activeSectionContext";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,7 +44,7 @@ export default function RootLayout({
           "bg-gray-950 text-white font-sans"
         )}
       >
-        {children}
+        <ActiveSectionContextProvider>{children}</ActiveSectionContextProvider>
       </body>
     </html>
   );
