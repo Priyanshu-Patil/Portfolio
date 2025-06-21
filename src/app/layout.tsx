@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+
 import { Inter, Calistoga, Host_Grotesk } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 import ActiveSectionContextProvider from "@/context/activeSectionContext";
