@@ -44,6 +44,8 @@ The app will be available at [http://localhost:3000](http://localhost:3000) by d
 | ⚛️ **Next.js**      | React framework for server-side rendering and static site generation.        |
 | ⚡ **React**         | Component-based UI library for building dynamic, responsive interfaces.      |
 | 🎨 **Tailwind CSS** | Utility-first CSS framework for rapid styling and a clean look.              |
+| 🧬 **ReactBits**      | Custom React utilities and components for enhanced interactivity.            |
+| ✨ **MagicUi**         | UI library for magical, animated, and interactive UI elements.               |
 | 🌀 **Framer Motion** | Animation library for smooth transitions and interactive UI.                 |
 | 🖼️ **next/image**   | Optimized image component for faster load times.                             |
 | 🧩 **Lenis**        | Smooth scroll library for buttery navigation.                                |
