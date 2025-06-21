@@ -123,15 +123,4 @@ Reach out via the [Contact](#contact) section or email me at:
 
 ---
 
-## 📝 Credits
-
-- [Next.js](https://nextjs.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Lenis](https://github.com/studio-freight/lenis)
-- [GSAP](https://greensock.com/gsap/)
-- [Figma](https://figma.com/)
-
----
-
 > _Built and designed by Priyanshu Patil — 2025_
