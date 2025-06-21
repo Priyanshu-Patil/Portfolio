@@ -18,11 +18,11 @@ export const AboutSection = () => {
         <div className="max-w-6xl mt-20 sm:mt-10 text-center">
           <div className="leading-10 font-light font-host-grotesk lg:text-2xl sm:text-lg md:text-xl tracking-wide">
             <TextAnimate animation="blurInUp" by="character" duration={3}>
-            I'm Priyanshu Patil, a Frontend Developer who loves crafting seamless and
+            I&apos;m Priyanshu Patil, a Frontend Developer who loves crafting seamless and
             responsive user experiences. I turn ideas into interactive and
             accessible interfaces. I enjoy building clean, maintainable code and
-            constantly exploring the latest in web technologies. Whether it's
-            optimizing performance or designing pixel-perfect layouts — I'm all
+            constantly exploring the latest in web technologies. Whether it&apos;s
+            optimizing performance or designing pixel-perfect layouts — I&apos;m all
             about delivering value through the web.
             </TextAnimate>
           </div>

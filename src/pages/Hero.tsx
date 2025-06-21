@@ -87,7 +87,7 @@ export const HeroSection = () => {
           </h1>
           <div className="mt-4 text-center text-white/60 md:text-lg">
             <TextAnimate animation="blurInUp" by="character" duration={3} once>
-              I craft seamless, responsive user interfaces that don't just look
+              I craft seamless, responsive user interfaces that don&apos;t just look
               good — they feel intuitive and alive. With a passion for clean
               code and pixel-perfect design, I bring ideas to life on the web,
               one component at a time.

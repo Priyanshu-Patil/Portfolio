@@ -50,7 +50,7 @@ export const ContactSection = () => {
               by="character"
               duration={1}
             >
-              Let's start a project together
+              Let&apos;s start a project together
             </TextAnimate>
           </h2>
         </div>
