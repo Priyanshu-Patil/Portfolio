@@ -11,50 +11,49 @@ import GrainImage from "@/assets/images/grain.jpg";
 
 const portfolioProjects = [
 	{
-		company: "Tech Stack",
+		company: "Tech",
 		year: "ReactJS, Locomotive Js",
 		title: "Ochi Design",
 		results: [
-			{ title: "Boosted sales by 20%" },
-			{ title: "Expanded customer reach by 35%" },
-			{ title: "Increased brand awareness by 15%" },
+			{ title: "Boosted visual engagement and interactivity" },
+			{ title: "Created a seamless scroll experience" },
+			{ title: "Strengthened responsive design skills" },
 		],
 		link: "https://ochi-dev.netlify.app/",
 		image: ochiImage,
 	},
 	{
-		company: "Tech Stack",
+		company: "Tech",
 		year: "reactjs, framer motion",
 		title: "Docs - Ultimate Document Management",
 		results: [
-			{ title: "Enhanced user experience by 40%" },
-			{ title: "Improved site speed by 50%" },
-			{ title: "Increased mobile traffic by 35%" },
+			{ title: "Add, Edit, and Delete Cards" },
+			{ title: "Smooth and intuitive drag-and-drop" },
+			{ title: "Browser’s localStorage, no login required!" },
 		],
 		link: "https://docs-document.netlify.app/",
-		target: "_blank",
 		image: docsImage,
 	},
 	{
-		company: "Quantum Dynamics",
-		year: "2025",
+		company: "tech",
+		year: "JavaScript, Lenis, Locomotive",
 		title: "Sundown Studio",
 		results: [
-			{ title: "Enhanced user experience by 40%" },
-			{ title: "Improved site speed by 50%" },
-			{ title: "Increased mobile traffic by 35%" },
+			{ title: "Real-world scroll performance optimization" },
+			{ title: "Aesthetic-driven development" },
+			{ title: "Strengthened animation logic in vanilla JS" },
 		],
 		link: "https://sundown-design-studio.netlify.app/",
 		image: sundownImage,
 	},
 	{
-		company: "Quantum Dynamics",
-		year: "2023",
-		title: "Sundown Studio",
+		company: "Tech",
+		year: "Html, css, git, github",
+		title: "UsabilityHub",
 		results: [
-			{ title: "Enhanced user experience by 40%" },
-			{ title: "Improved site speed by 50%" },
-			{ title: "Increased mobile traffic by 35%" },
+			{ title: "Honed pixel-perfect layout skills" },
+			{ title: "Practiced clean and maintainable CSS" },
+			{ title: "Leveraged Git & GitHub for real-time collaboration" },
 		],
 		link: "https://project-usabilityhub.netlify.app/",
 		image: usabilityImage,
@@ -114,7 +113,7 @@ export const Projects = () => {
 											</li>
 										))}
 									</ul>
-									<a href={project.link}>
+									<a href={project.link} target="_blank">
 										<button className="bg-white text-gray-950 h-12 w-full rounded-xl inline-flex items-center justify-center gap-2 md:w-auto px-6 font-semibold mt-8">
 											<span>Visit Live Site</span>
 											<ArrowUpRightIcon className=" size-5 ml-2" />

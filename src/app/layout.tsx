@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   title: "Priyanshu Patil — Software Engineer | Frontend Developer",
   description: "Creative Frontend Developer",
   icons: {
-    icon: "/porfolio-logo.png",
+    icon: "/my-logo.png",
   },
 };
 

@@ -30,11 +30,19 @@ export const ContactSection = () => {
   return (
     <section className="flex items-center justify-center">
       <div className="container max-w-2xl mx-auto px-4 py-14 flex flex-col items-center justify-center">
-        <div className="mb-8 flex flex-col items-center">
+        <div className="mb-8 flex flex-col gap-2 items-center">
           <span className="flex items-center gap-2 text-lime-400 font-medium uppercase tracking-wider text-sm mb-2">
             <SparkleIcon className="size-5 text-lime-400" />
             Connect with me
           </span>
+          <div className="bg-gray-950 border border-gray-800 px-4 py-2 inline-flex items-center gap-4 rounded-lg">
+            <div className="bg-green-500 size-2.5 rounded-full relative">
+              <div className="bg-green-500 absolute inset-0 rounded-full animate-ping"></div>
+            </div>
+            <div className="text-sm font-semibold">
+              Available for work
+            </div>
+          </div>
           <h2 className="text-white px-10 font-host-grotesk text-5xl sm:text-2xl md:px-16 md:text-5xl font-bold leading-tight text-center">
             <TextAnimate
               className="px-7"
