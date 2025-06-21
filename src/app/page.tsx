@@ -1,13 +1,13 @@
-import { Header } from "@/pages/Header";
-import { HeroSection } from "@/pages/Hero";
-import { TapeSection } from "@/pages/Tape";
-import { AboutSection } from "@/pages/About";
-import Approach from "@/pages/Approach";
-import { Projects } from "@/pages/Projects";
-import { ContactSection } from "@/pages/Contact";
-import { Footer } from "@/pages/Footer";
+import { Header } from "@/components/Header";
+import { HeroSection } from "@/components/Hero";
+import { TapeSection } from "@/components/Tape";
+import { AboutSection } from "@/components/About";
+import Approach from "@/components/Approach";
+import { Projects } from "@/components/Projects";
+import { ContactSection } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
-import { TechSection} from "@/pages/Tech";
+import { TechSection} from "@/components/Tech";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 
 export default function Home() {
