@@ -62,7 +62,7 @@ export const HeroSection = () => {
         <div className="flex flex-col items-center">
           <div className="font-host-grotesk text-8xl font-bold mb-5 md:text-7xl sm:text-4xl">
             <TextAnimate animation="blurInUp" by="character" duration={1} once>
-              Hey, I'm Priyanshu
+              Hey, I&apos;m Priyanshu
             </TextAnimate>
           </div>
           <Image

@@ -18,7 +18,6 @@ import figma from "@/assets/icons/figma.png";
 import tailwindcss from "@/assets/icons/tailwindcss.png";
 import git from "@/assets/icons/git.png";
 import github from "@/assets/icons/github.png";
-import { div } from "framer-motion/client";
 
 const techStack = [
   { name: "OpenAI", icon: openai },
