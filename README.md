@@ -44,6 +44,8 @@ The app will be available at [http://localhost:3000](http://localhost:3000) by d
 | ⚛️ **Next.js**      | React framework for server-side rendering and static site generation.        |
 | ⚡ **React**         | Component-based UI library for building dynamic, responsive interfaces.      |
 | 🎨 **Tailwind CSS** | Utility-first CSS framework for rapid styling and a clean look.              |
+| 🧬 **ReactBits**      | Custom React utilities and components for enhanced interactivity.            |
+| ✨ **MagicUi**         | UI library for magical, animated, and interactive UI elements.               |
 | 🌀 **Framer Motion** | Animation library for smooth transitions and interactive UI.                 |
 | 🖼️ **next/image**   | Optimized image component for faster load times.                             |
 | 🧩 **Lenis**        | Smooth scroll library for buttery navigation.                                |
@@ -120,17 +122,6 @@ Portfolio/
 Want to collaborate or have a project in mind?  
 Reach out via the [Contact](#contact) section or email me at:  
 **priyanshupatil.dev@gmail.com**
-
----
-
-## 📝 Credits
-
-- [Next.js](https://nextjs.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Lenis](https://github.com/studio-freight/lenis)
-- [GSAP](https://greensock.com/gsap/)
-- [Figma](https://figma.com/)
 
 ---
 
