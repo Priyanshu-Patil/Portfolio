@@ -4,6 +4,8 @@ import "./globals.css";
 import { Inter, Calistoga, Host_Grotesk } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 import ActiveSectionContextProvider from "@/context/activeSectionContext";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -46,7 +48,10 @@ export default function RootLayout({
           "bg-gray-950 text-white font-sans"
         )}
       >
-        <ActiveSectionContextProvider>{children}</ActiveSectionContextProvider>
+        <ActiveSectionContextProvider>
+          {children}
+          <ToastContainer position="top-right" autoClose={3000} theme="dark" />
+          </ActiveSectionContextProvider>
       </body>
     </html>
   );
