@@ -44,7 +44,7 @@ export const ContactSection = () => {
             </div>
             <h2 className="text-white px-8 font-host-grotesk text-5xl sm:text-2xl md:px-16 md:text-5xl font-bold leading-tight text-center">
               <TextAnimate
-                className="px-7"
+                className="px-8"
                 animation="blurInUp"
                 by="character"
                 duration={1}
