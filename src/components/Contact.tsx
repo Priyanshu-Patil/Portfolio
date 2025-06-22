@@ -42,7 +42,7 @@ export const ContactSection = () => {
               </div>
               <div className="text-sm font-semibold">Available for work</div>
             </div>
-            <h2 className="text-white px-10 font-host-grotesk text-5xl sm:text-2xl md:px-16 md:text-5xl font-bold leading-tight text-center">
+            <h2 className="text-white px-8 font-host-grotesk text-5xl sm:text-2xl md:px-16 md:text-5xl font-bold leading-tight text-center">
               <TextAnimate
                 className="px-7"
                 animation="blurInUp"
