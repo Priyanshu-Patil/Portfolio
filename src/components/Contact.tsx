@@ -2,7 +2,7 @@
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import { TextAnimate } from "@/components/magicui/text-animate";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
-import { toast } from "react-toastify";
+import { toast } from "react-hot-toast";
 
 export const ContactSection = () => {
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -26,6 +26,8 @@ export const ContactSection = () => {
 
     if (result.success) {
       toast.success("Message sent successfully! 🚀");
+    } else {
+      toast.error("Failed to send message. Please try again.");
     }
   }
 
