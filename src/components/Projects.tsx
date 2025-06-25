@@ -1,3 +1,4 @@
+import codesnapperImage from '@/assets/images/codesnapper.png'
 import docsImage from "@/assets/images/Docs.png";
 import ochiImage from "@/assets/images/Ochi.png";
 import sundownImage from "@/assets/images/Sundown.png";
@@ -8,6 +9,18 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import GrainImage from "@/assets/images/grain.jpg";
 
 const portfolioProjects = [
+  {
+    company: "Tech",
+    year: "ReactJS, ShadCN, Highlight.js, ShadCN UI",
+    title: "Code Snapper",
+    results: [
+      { title: "10+ elegant themes (light + dark theme included) with 12+ font styles." },
+      { title: "Multiple export options: save as SVG/PNG, copy to clipboard and copy link." },
+      { title: "Other customization options like: font size, padding, background etc." },
+    ],
+    link: "https://codesnapper.netlify.app",
+    image: codesnapperImage,
+  },
   {
     company: "Tech",
     year: "ReactJS, Locomotive Js",
@@ -91,7 +104,7 @@ export const Projects = () => {
                 ></div>
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                   <div className="lg:pb-16">
-                    <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest gap-2 text-sm text-transparent bg-clip-text">
+                    <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest gap-2 text-[12px] text-transparent bg-clip-text">
                       <span>{project.company}</span>
                       <span>—</span>
                       <span>{project.year}</span>
