@@ -100,7 +100,7 @@ export const HeroSection = () => {
                 once
               >
                 I craft seamless, responsive user interfaces that don&apos;t
-                just look good — they feel intuitive and alive. With a passion
+                just look good, they feel intuitive and alive. With a passion
                 for clean code and pixel-perfect design, I bring ideas to life
                 on the web, one component at a time.
               </TextAnimate>
