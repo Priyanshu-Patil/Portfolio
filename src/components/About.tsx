@@ -24,7 +24,7 @@ export const AboutSection = () => {
                 into interactive and accessible interfaces. I enjoy building
                 clean, maintainable code and constantly exploring the latest in
                 web technologies. Whether it&apos;s optimizing performance or
-                designing pixel-perfect layouts — I&apos;m all about delivering
+                designing pixel-perfect layouts, I&apos;m all about delivering
                 value through the web.
               </TextAnimate>
             </div>
