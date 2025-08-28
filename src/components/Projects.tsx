@@ -1,4 +1,4 @@
-import codesnapperImage from '@/assets/images/codesnapper.png'
+import codesnapperImage from "@/assets/images/codesnapper.png";
 import docsImage from "@/assets/images/Docs.png";
 import ochiImage from "@/assets/images/Ochi.png";
 import sundownImage from "@/assets/images/Sundown.png";
@@ -7,8 +7,22 @@ import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import GrainImage from "@/assets/images/grain.jpg";
+import phoenixImage from "@/assets/images/phoenixImage.png";
 
 const portfolioProjects = [
+  {
+    company: "Tech",
+    year: "ReactJS, Gemini 2.5 Flash, TailwindCSS, Appwrite, Framer Motion",
+    title: "Phoenix - AI Chat App",
+    results: [
+      { title: "Built a full-stack AI-powered chat app with Appwrite backend." },
+      { title: "Integrated chat history management and conversation actions." },
+      { title: "Smooth animations and modern UI with Motion + Tailwind." },
+      { title: "User authentication, error handling, and clean code architecture." },
+    ],
+    link: "https://phoenix-ai-chats.vercel.app/",
+    image: phoenixImage,
+  },
   {
     company: "Tech",
     year: "ReactJS, ShadCN, Highlight.js, ShadCN UI",
@@ -17,6 +31,7 @@ const portfolioProjects = [
       { title: "10+ elegant themes (light + dark theme included) with 12+ font styles." },
       { title: "Multiple export options: save as SVG/PNG, copy to clipboard and copy link." },
       { title: "Other customization options like: font size, padding, background etc." },
+      { title: "Lightweight and responsive design for quick code snippets." },
     ],
     link: "https://codesnapper.netlify.app",
     image: codesnapperImage,
@@ -26,50 +41,55 @@ const portfolioProjects = [
     year: "ReactJS, Locomotive Js",
     title: "Ochi Design",
     results: [
-      { title: "Boosted visual engagement and interactivity" },
-      { title: "Created a seamless scroll experience" },
-      { title: "Strengthened responsive design skills" },
+      { title: "Boosted visual engagement and interactivity." },
+      { title: "Created a seamless scroll experience." },
+      { title: "Strengthened responsive design skills." },
+      { title: "Enhanced storytelling through motion and layout." },
     ],
     link: "https://ochi-dev.netlify.app/",
     image: ochiImage,
   },
   {
     company: "Tech",
-    year: "reactjs, framer motion",
+    year: "ReactJS, Framer Motion",
     title: "Docs - Ultimate Document Management",
     results: [
-      { title: "Add, Edit, and Delete Cards" },
-      { title: "Smooth and intuitive drag-and-drop" },
+      { title: "Add, Edit, and Delete Cards." },
+      { title: "Smooth and intuitive drag-and-drop." },
       { title: "Browser’s localStorage, no login required!" },
+      { title: "Clean, minimal UI for distraction-free workflow." },
     ],
     link: "https://docs-document.netlify.app/",
     image: docsImage,
   },
   {
-    company: "tech",
+    company: "Tech",
     year: "JavaScript, Lenis, Locomotive",
     title: "Sundown Studio",
     results: [
-      { title: "Real-world scroll performance optimization" },
-      { title: "Aesthetic-driven development" },
-      { title: "Strengthened animation logic in vanilla JS" },
+      { title: "Real-world scroll performance optimization." },
+      { title: "Aesthetic-driven development." },
+      { title: "Strengthened animation logic in vanilla JS." },
+      { title: "Crafted immersive brand-focused UI/UX." },
     ],
     link: "https://sundown-design-studio.netlify.app/",
     image: sundownImage,
   },
   {
     company: "Tech",
-    year: "Html, css, git, github",
+    year: "HTML, CSS, Git, GitHub",
     title: "UsabilityHub",
     results: [
-      { title: "Honed pixel-perfect layout skills" },
-      { title: "Practiced clean and maintainable CSS" },
-      { title: "Git & GitHub for real-time collaboration" },
+      { title: "Honed pixel-perfect layout skills." },
+      { title: "Practiced clean and maintainable CSS." },
+      { title: "Git & GitHub for real-time collaboration." },
+      { title: "Recreated a real-world landing page with best practices." },
     ],
     link: "https://project-usabilityhub.netlify.app/",
     image: usabilityImage,
   },
 ];
+
 
 export const Projects = () => {
   return (
