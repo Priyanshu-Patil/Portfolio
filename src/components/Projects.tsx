@@ -8,7 +8,7 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import GrainImage from "@/assets/images/grain.jpg";
 import phoenixImage from "@/assets/images/phoenixImage.png";
-import flowdeckImage from "@/assets/images/flowdeck.png";
+import flowdeckImage from "@/assets/images/Flowdeck.png";
 
 const portfolioProjects = [
   {
