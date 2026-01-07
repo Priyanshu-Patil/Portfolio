@@ -314,12 +314,18 @@ const TextAnimateBase = ({
   const MotionComponent = motion.create(Component);
 
   let segments: string[] = [];
+  let isCharacterMode = false;
+  let totalCharacterCount = 0;
+  
   switch (by) {
     case "word":
       segments = children.split(/(\s+)/);
       break;
     case "character":
-      segments = children.split("");
+      isCharacterMode = true;
+      // Split by words first, then we'll handle character animation within words
+      segments = children.split(/(\s+)/);
+      totalCharacterCount = children.length;
       break;
     case "line":
       segments = children.split("\n");
@@ -330,6 +336,8 @@ const TextAnimateBase = ({
       break;
   }
 
+  const segmentCount = isCharacterMode ? totalCharacterCount : segments.length;
+
   const finalVariants = variants
     ? {
         container: {
@@ -339,13 +347,13 @@ const TextAnimateBase = ({
             transition: {
               opacity: { duration: 0.01, delay },
               delayChildren: delay,
-              staggerChildren: duration / segments.length,
+              staggerChildren: duration / segmentCount,
             },
           },
           exit: {
             opacity: 0,
             transition: {
-              staggerChildren: duration / segments.length,
+              staggerChildren: duration / segmentCount,
               staggerDirection: -1,
             },
           },
@@ -360,13 +368,13 @@ const TextAnimateBase = ({
               ...defaultItemAnimationVariants[animation].container.show,
               transition: {
                 delayChildren: delay,
-                staggerChildren: duration / segments.length,
+                staggerChildren: duration / segmentCount,
               },
             },
             exit: {
               ...defaultItemAnimationVariants[animation].container.exit,
               transition: {
-                staggerChildren: duration / segments.length,
+                staggerChildren: duration / segmentCount,
                 staggerDirection: -1,
               },
             },
@@ -383,24 +391,71 @@ const TextAnimateBase = ({
         whileInView={startOnView ? "show" : undefined}
         animate={startOnView ? undefined : "show"}
         exit="exit"
-        className={cn("whitespace-pre-wrap", className)}
+        className={cn(
+          "whitespace-pre-wrap break-words",
+          className
+        )}
         viewport={{ once }}
         {...props}
       >
-        {segments.map((segment, i) => (
-          <motion.span
-            key={`${by}-${segment}-${i}`}
-            variants={finalVariants.item}
-            custom={i * staggerTimings[by]}
-            className={cn(
-              by === "line" ? "block" : "inline-block whitespace-pre",
-              by === "character" && "",
-              segmentClassName,
-            )}
-          >
-            {segment}
-          </motion.span>
-        ))}
+        {isCharacterMode ? (
+          // For character mode, wrap each word to prevent breaking
+          (() => {
+            let globalCharIndex = 0;
+            return segments.map((segment, i) => {
+              // If it's whitespace, render as-is
+              if (/^\s+$/.test(segment)) {
+                const spaceLength = segment.length;
+                const startIndex = globalCharIndex;
+                globalCharIndex += spaceLength;
+                return (
+                  <span key={`space-${i}`} className="whitespace-pre">
+                    {segment}
+                  </span>
+                );
+              }
+              // For words, split into characters but keep them in a word container
+              const characters = segment.split("");
+              const wordStartIndex = globalCharIndex;
+              globalCharIndex += characters.length;
+              return (
+                <span
+                  key={`word-${i}`}
+                  className="inline-block whitespace-nowrap"
+                >
+                  {characters.map((char, charIndex) => {
+                    const currentIndex = wordStartIndex + charIndex;
+                    return (
+                      <motion.span
+                        key={`char-${i}-${charIndex}`}
+                        variants={finalVariants.item}
+                        custom={currentIndex * staggerTimings[by]}
+                        className="inline-block"
+                      >
+                        {char}
+                      </motion.span>
+                    );
+                  })}
+                </span>
+              );
+            });
+          })()
+        ) : (
+          segments.map((segment, i) => (
+            <motion.span
+              key={`${by}-${segment}-${i}`}
+              variants={finalVariants.item}
+              custom={i * staggerTimings[by]}
+              className={cn(
+                by === "line" ? "block" : "inline-block",
+                "whitespace-pre",
+                segmentClassName,
+              )}
+            >
+              {segment}
+            </motion.span>
+          ))
+        )}
       </MotionComponent>
     </AnimatePresence>
   );

@@ -92,7 +92,7 @@ export const HeroSection = () => {
                 Crafting digital experiences through code and creative design.
               </TextAnimate>
             </h1>
-            <div className="mt-4 text-center text-white/60 md:text-lg">
+            <div className="mt-4 text-center text-white/60 md:text-lg break-words">
               <TextAnimate
                 animation="blurInUp"
                 by="character"
