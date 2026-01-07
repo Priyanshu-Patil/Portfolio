@@ -8,8 +8,23 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import GrainImage from "@/assets/images/grain.jpg";
 import phoenixImage from "@/assets/images/phoenixImage.png";
+import flowdeckImage from "@/assets/images/flowdeck.png";
 
 const portfolioProjects = [
+  {
+      company: "Tech",
+      year: "React, Node.js, Express, PostgreSQL, Prisma, Clerk, Inngest, Nodemailer",
+      title: "Flowdeck",
+      results: [
+        { title: "Built a full-stack project management platform." },
+        { title: "Implemented roles, tasks, priorities, and workflows." },
+        { title: "Added dashboards, analytics, and calendar views." },
+        { title: "Automated reminders and email notifications." },
+        { title: "Designed scalable APIs with a modern, calm UI." },
+    ],
+    link: "https://flowdeck-one.vercel.app/",
+    image: flowdeckImage,
+  },
   {
     company: "Tech",
     year: "ReactJS, Gemini 2.5 Flash, TailwindCSS, Appwrite, Framer Motion",
