@@ -99,10 +99,7 @@ export const HeroSection = () => {
                 duration={3}
                 once
               >
-                I craft seamless, responsive user interfaces that don&apos;t
-                just look good, they feel intuitive and alive. With a passion
-                for clean code and pixel-perfect design, I bring ideas to life
-                on the web, one component at a time.
+                I build responsive, intuitive web interfaces that focus on real usability, not just visuals. With clean code and full-stack experience, I turn ideas into thoughtful, production-ready products.
               </TextAnimate>
             </div>
           </div>
