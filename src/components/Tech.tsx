@@ -10,7 +10,6 @@ import react from "@/assets/icons/react.png";
 import nextjs from "@/assets/icons/nextjs.png";
 import redux from "@/assets/icons/redux.png";
 import nodejs from "@/assets/icons/nodejs.png";
-import mysql from "@/assets/icons/mysql.png";
 import mongodb from "@/assets/icons/mongodb.png";
 import gsap from "@/assets/icons/gsap.png";
 import framer from "@/assets/icons/framer.png";
@@ -18,6 +17,10 @@ import figma from "@/assets/icons/figma.png";
 import tailwindcss from "@/assets/icons/tailwindcss.png";
 import git from "@/assets/icons/git.png";
 import github from "@/assets/icons/github.png";
+import postgres from "@/assets/icons/postgresql.png";
+import prisma from "@/assets/icons/prisma.png";
+import clerk from "@/assets/icons/clerk.jpeg";
+import postman from "@/assets/icons/postman.png";
 
 const techStack = [
   { name: "OpenAI", icon: openai },
@@ -29,8 +32,11 @@ const techStack = [
   { name: "Next.js", icon: nextjs },
   { name: "Redux", icon: redux },
   { name: "Node.js", icon: nodejs },
-  { name: "MySQL", icon: mysql },
   { name: "MongoDB", icon: mongodb },
+  { name: "Postgres", icon: postgres },
+  { name: "Prisma", icon: prisma },
+  { name: "Clerk", icon: clerk },
+  { name: "Postman", icon: postman },
   { name: "GSAP", icon: gsap },
   { name: "Framer Motion", icon: framer },
   { name: "Figma", icon: figma },

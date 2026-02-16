@@ -6,6 +6,7 @@ import { twMerge } from "tailwind-merge";
 import ActiveSectionContextProvider from "@/context/activeSectionContext";
 import { Toaster } from "react-hot-toast";
 import toast from "react-hot-toast";
+import { LoadingWrapper } from "@/components/LoadingWrapper";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -48,9 +49,12 @@ export default function RootLayout({
           "bg-gray-950 text-white font-sans"
         )}
       >
-        <ActiveSectionContextProvider>{children}
-          <Toaster position="top-center" toastOptions={{ duration: 2000 }} />
-        </ActiveSectionContextProvider>
+        <LoadingWrapper>
+          <ActiveSectionContextProvider>
+            {children}
+            <Toaster position="top-center" toastOptions={{ duration: 2000 }} />
+          </ActiveSectionContextProvider>
+        </LoadingWrapper>
       </body>
     </html>
   );
