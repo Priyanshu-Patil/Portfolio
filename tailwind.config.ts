@@ -29,8 +29,8 @@ const config: Config = {
       },
 
       animation: {
-        "move-left": "move-left 20s linear infinite",
-		    "gradient": 'gradient 8s linear infinite',
+        "move-left": "move-left 40s linear infinite",
+        "gradient": "gradient 8s linear infinite",
       },
 
       keyframes: {

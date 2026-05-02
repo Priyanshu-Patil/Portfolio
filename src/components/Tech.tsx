@@ -48,11 +48,11 @@ const techStack = [
 export const TechSection = () => {
   return (
     <>
-      <div className="mt-20 sm:mt-10">
+      <div className="mt-10">
         <h1 className="font-host-grotesk font-semibold text-3xl md:text-5xl text-center">
           My TechStack
         </h1>
-        <div className="py-16 lg:py-24 overflow-x-clip">
+        <div className="py-12 lg:py-16 overflow-x-clip">
           <div className="border-t-[1px] py-10 border-b-[1px] border-white/30 -mx-1">
             <div className="flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
               <div className="flex flex-none gap-4 pr-4 py-3 animate-move-left">

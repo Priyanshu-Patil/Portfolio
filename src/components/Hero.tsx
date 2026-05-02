@@ -87,7 +87,7 @@ export const HeroSection = () => {
             </div>
           </div>
           <div className="max-w-lg mx-auto">
-            <h1 className="font-serif text-3xl md:text5xl text-center mt-8 tracking-wide">
+            <h1 className="font-host-grotesk font-semibold text-3xl md:text5xl text-center mt-8 tracking-wide">
               <TextAnimate animate="blueInUp" once>
                 Crafting digital experiences through code and creative design.
               </TextAnimate>

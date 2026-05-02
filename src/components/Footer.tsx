@@ -16,7 +16,7 @@ export const Footer = () => {
         <div className="container">
           <div className="border-t border-white/15 py-6 gap-8 text-sm md:flex-row md:justify-between flex flex-col items-center">
             <div className="text-white/40">
-              &copy; 2025. All rights reserved.
+              &copy; 2026. All rights reserved.
             </div>
 
             <nav className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:flex md:flex-row items-center md:gap-6">

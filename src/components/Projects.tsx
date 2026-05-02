@@ -12,8 +12,7 @@ import flowdeckImage from "@/assets/images/Flowdeck.png";
 
 const portfolioProjects = [
   {
-      company: "Tech",
-      year: "React, Node.js, Express, PostgreSQL, Prisma, Clerk, Inngest, Nodemailer",
+      techStack: "React, Node.js, Express, PostgreSQL, Prisma, Clerk, Inngest, Nodemailer",
       title: "Flowdeck",
       results: [
         { title: "Built a full-stack project management platform." },
@@ -26,8 +25,7 @@ const portfolioProjects = [
     image: flowdeckImage,
   },
   {
-    company: "Tech",
-    year: "ReactJS, Gemini 2.5 Flash, TailwindCSS, Appwrite, Framer Motion",
+    techStack: "ReactJS, Gemini 2.5 Flash, TailwindCSS, Appwrite, Framer Motion",
     title: "Phoenix - AI Chat App",
     results: [
       { title: "Built a full-stack AI-powered chat app with Appwrite backend." },
@@ -39,8 +37,7 @@ const portfolioProjects = [
     image: phoenixImage,
   },
   {
-    company: "Tech",
-    year: "ReactJS, ShadCN, Highlight.js, ShadCN UI",
+    techStack: "ReactJS, ShadCN, Highlight.js, ShadCN UI",
     title: "Code Snapper",
     results: [
       { title: "10+ elegant themes (light + dark theme included) with 12+ font styles." },
@@ -52,8 +49,7 @@ const portfolioProjects = [
     image: codesnapperImage,
   },
   {
-    company: "Tech",
-    year: "ReactJS, Locomotive Js",
+    techStack: "ReactJS, Locomotive Js",
     title: "Ochi Design",
     results: [
       { title: "Boosted visual engagement and interactivity." },
@@ -65,8 +61,7 @@ const portfolioProjects = [
     image: ochiImage,
   },
   {
-    company: "Tech",
-    year: "ReactJS, Framer Motion",
+    techStack: "ReactJS, Framer Motion",
     title: "Docs - Ultimate Document Management",
     results: [
       { title: "Add, Edit, and Delete Cards." },
@@ -78,8 +73,7 @@ const portfolioProjects = [
     image: docsImage,
   },
   {
-    company: "Tech",
-    year: "JavaScript, Lenis, Locomotive",
+    techStack: "JavaScript, Lenis, Locomotive",
     title: "Sundown Studio",
     results: [
       { title: "Real-world scroll performance optimization." },
@@ -91,8 +85,7 @@ const portfolioProjects = [
     image: sundownImage,
   },
   {
-    company: "Tech",
-    year: "HTML, CSS, Git, GitHub",
+    techStack: "HTML, CSS, Git, GitHub",
     title: "UsabilityHub",
     results: [
       { title: "Honed pixel-perfect layout skills." },
@@ -116,7 +109,7 @@ export const Projects = () => {
               Real-World Results
             </p>
           </div>
-          <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">
+          <h2 className="font-host-grotesk font-semibold text-3xl md:text-5xl text-center mt-6">
             Featured Projects
           </h2>
           <p className="text-center md:text-lg lg:text-xl max-w-md mx-auto text-white/60 mt-4">
@@ -125,7 +118,7 @@ export const Projects = () => {
           <div className="flex flex-col gap-20 md:mt-20 mt-10">
             {portfolioProjects.map((project, index) => (
               <div
-                key={`${project.title}-${project.year}`}
+                key={`${project.title}-${project.techStack}`}
                 style={{
                   top: `calc(64px + ${index * 40}px)`,
                 }}
@@ -140,12 +133,10 @@ export const Projects = () => {
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                   <div className="lg:pb-16">
                     <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest gap-2 text-[12px] text-transparent bg-clip-text">
-                      <span>{project.company}</span>
-                      <span>—</span>
-                      <span>{project.year}</span>
+                      <span>{project.techStack}</span>
                     </div>
 
-                    <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5">
+                    <h3 className="font-host-grotesk font-semibold text-2xl mt-2 md:text-4xl md:mt-5">
                       {project.title}
                     </h3>
                     <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
