@@ -30,30 +30,47 @@ export const AboutSection = () => {
             initialDelay={500}
             enableSound={true}
             commands={[
-              "whoami",
-              "skills --list",
-              "current-focus",
-              "philosophy",
+            "whoami",
+            "tech-stack --list",
+            "projects --show",
+            "currently-building",
+            "engineering-philosophy",
             ]}
             outputs={{
               0: [
                 "Priyanshu Patil",
-                "Frontend-focused Full Stack Developer",
+                "Full Stack Engineer",
+                "Building SaaS Products, Distributed Systems & AI Applications",
               ],
+            
               1: [
-                "React, Next.js, TypeScript",
-                "Node.js, Express, MongoDB",
-                "UI/UX, Animations, Performance",
+                "Frontend: React, Next.js, TypeScript, Tailwind CSS",
+                "Backend: Node.js, Express.js, REST APIs",
+                "Databases: PostgreSQL, MongoDB, Prisma",
+                "Infrastructure: Docker, RabbitMQ",
+                "Architecture: Event-Driven Systems, RBAC, Multi-Tenancy",
               ],
+            
               2: [
-                "Building real-world products",
-                "Exploring AI + Web integrations",
-                "Open Source Contributions",
+                "ObserveX → Distributed API Monitoring Platform",
+                "Flowdeck → Project Management SaaS",
+                "Phoenix → AI-Powered Web Application",
+                "Northeast Auto Creations → CMS-Driven E-Commerce Platform",
               ],
+            
               3: [
-                "Ship fast, but build right.",
-                "Clarity > complexity.",
-                "Code should solve problems, not create them.",
+                "Scalable SaaS Applications",
+                "Distributed Backend Systems",
+                "API Monitoring & Observability",
+                "AI-Powered User Experiences",
+                "Open Source & Product Engineering",
+              ],
+            
+              4: [
+                "Build for scale.",
+                "Optimize for maintainability.",
+                "Automate repetitive work.",
+                "Simple solutions outperform clever ones.",
               ],
             }}
           />
