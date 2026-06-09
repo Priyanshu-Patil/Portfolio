@@ -112,7 +112,7 @@ export const HeroSection = () => {
               <ArrowDonw className="size-4 -rotate-[130deg]" />
             </button>
             <a
-              href="https://drive.google.com/file/d/1mcX_oyR2z8QoMS4zh2C6QIWcCUDPeTsa/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1syPfuNuhIV_BMdJe4xne3XCMmWxyWZzW/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor:pointer inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-full"
