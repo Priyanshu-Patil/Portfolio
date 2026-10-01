@@ -27,7 +27,7 @@ const hostGrotesk = Host_Grotesk({
 
 export const metadata: Metadata = {
   title: "Priyanshu Patil — Software Engineer",
-  description: "Full Stack Developer",
+  description: "Full Stack Developer ",
   icons: {
     icon: "/my-logo.png",
   },
