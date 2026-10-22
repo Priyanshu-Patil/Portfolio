@@ -23,7 +23,7 @@ const portfolioProjects = [
         { title: "Built multi-tenant access controls and API key management." },
     ],
     link: "https://observe-x.vercel.app/",
-    image: observeXImage,
+    image: observexImage,
   },
   {
       techStack: "React, Node.js, Express, PostgreSQL, Prisma, Clerk, Inngest, Nodemailer",
