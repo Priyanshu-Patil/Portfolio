@@ -9,8 +9,22 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import GrainImage from "@/assets/images/grain.jpg";
 import phoenixImage from "@/assets/images/phoenixImage.png";
 import flowdeckImage from "@/assets/images/Flowdeck.png";
+import observexImage from "@/assets/images/ObserveX-dash.png"
 
 const portfolioProjects = [
+  {
+      techStack: "React, Node.js, Express, MongoDB, PostgreSQL, RabbitMQ",
+      title: "ObserveX - API Monitoring Platform",
+      results: [
+        { title: "Built and deployed a distributed API monitoring platform." },
+        { title: "Tracked 21 endpoints across 17 services with latency and error analytics." },
+        { title: "Implemented retries, circuit breakers, DLQs, and idempotent processing." },
+        { title: "Combined PostgreSQL analytics with MongoDB telemetry storage." },
+        { title: "Built multi-tenant access controls and API key management." },
+    ],
+    link: "https://observe-x.vercel.app/",
+    image: observeXImage,
+  },
   {
       techStack: "React, Node.js, Express, PostgreSQL, Prisma, Clerk, Inngest, Nodemailer",
       title: "Flowdeck",
@@ -83,18 +97,6 @@ const portfolioProjects = [
     ],
     link: "https://sundown-design-studio.netlify.app/",
     image: sundownImage,
-  },
-  {
-    techStack: "HTML, CSS, Git, GitHub",
-    title: "UsabilityHub",
-    results: [
-      { title: "Honed pixel-perfect layout skills." },
-      { title: "Practiced clean and maintainable CSS." },
-      { title: "Git & GitHub for real-time collaboration." },
-      { title: "Recreated a real-world landing page with best practices." },
-    ],
-    link: "https://project-usabilityhub.netlify.app/",
-    image: usabilityImage,
   },
 ];
 
