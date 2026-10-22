@@ -28,7 +28,6 @@ export const AboutSection = () => {
             typingSpeed={60}
             delayBetweenCommands={1000}
             initialDelay={500}
-            enableSound={true}
             commands={[
             "whoami",
             "tech-stack --list",
@@ -37,43 +36,43 @@ export const AboutSection = () => {
             "engineering-philosophy",
             ]}
             outputs={{
-              0: [
-                "Priyanshu Patil",
-                "Full Stack Engineer",
-                "Building SaaS Products, Distributed Systems & AI Applications",
-              ],
-            
-              1: [
-                "Frontend: React, Next.js, TypeScript, Tailwind CSS",
-                "Backend: Node.js, Express.js, REST APIs",
-                "Databases: PostgreSQL, MongoDB, Prisma",
-                "Infrastructure: Docker, RabbitMQ",
-                "Architecture: Event-Driven Systems, RBAC, Multi-Tenancy",
-              ],
-            
-              2: [
-                "ObserveX → Distributed API Monitoring Platform",
-                "Flowdeck → Project Management SaaS",
-                "Phoenix → AI-Powered Web Application",
-                "Northeast Auto Creations → CMS-Driven E-Commerce Platform",
-              ],
-            
-              3: [
-                "Scalable SaaS Applications",
-                "Distributed Backend Systems",
-                "API Monitoring & Observability",
-                "AI-Powered User Experiences",
-                "Open Source & Product Engineering",
-              ],
-            
-              4: [
-                "Build for scale.",
-                "Optimize for maintainability.",
-                "Automate repetitive work.",
-                "Simple solutions outperform clever ones.",
-              ],
-            }}
-          />
+                0: [
+                  "Priyanshu Patil",
+                  "Full Stack Developer",
+                  "Building Production-Ready Products & Distributed Backend Systems",
+                ],
+              
+                1: [
+                  "Frontend: React, Next.js, TypeScript, Tailwind CSS",
+                  "Backend: Node.js, Express.js, REST APIs",
+                  "Databases: PostgreSQL, MongoDB, Prisma",
+                  "Messaging: RabbitMQ, Asynchronous Processing",
+                  "Architecture: Distributed Systems, Multi-Tenancy, RBAC",
+                ],
+              
+                2: [
+                  "ObserveX → Distributed API Monitoring & Analytics",
+                  "Flowdeck → Project Management SaaS",
+                  "Phoenix → AI-Powered Chat Application",
+                  "Northeast Auto Creations → E-Commerce Platform",
+                ],
+              
+                3: [
+                  "Production-Deployed Product Development",
+                  "API Monitoring & Observability",
+                  "Event-Driven Backend Architecture",
+                  "Fault Tolerance & Reliable Processing",
+                  "Full Stack Product Engineering",
+                ],
+              
+                4: [
+                  "Build systems that solve real problems.",
+                  "Design for failure, not just the happy path.",
+                  "Measure performance instead of guessing.",
+                  "Keep code simple, maintainable, and reliable.",
+                ],
+              }} 
+            />
         </div>
       </div>
     </section>
